@@ -1,0 +1,6 @@
+Residente
+Hotel
+VehiculosEMT
+Taxis
+Servicios
+Logistica

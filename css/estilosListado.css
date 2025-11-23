@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #eef2f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+#formulario {
+    width: 50%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grid-fechas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#grid-fechas label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+button{
+    background-color: #f8fafc;
+    color: #667eea;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+a{
+    text-decoration: none;
+}
+
+.fecha {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.fecha:focus {
+    outline: none;
+    border-color: #a78bfa;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fecha::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.mensaje-error {
+    color: #ffafaf;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.contenedor-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="submit"] {
+    background-color: #f8fafc;
+    color: #667eea;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+
+
+.resultados {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.resultados h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabla-resultados th {
+    background-color: #667eea;
+    color: white;
+    font-weight: 600;
+    padding: 12px 15px;
+}
+
+.tabla-resultados td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+}
+
+.tabla-resultados tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.tabla-resultados tbody tr:hover {
+    background-color: #e9ecef;
+}
